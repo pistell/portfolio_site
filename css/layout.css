@@ -355,10 +355,10 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: jquery 2s ease;
   	-webkit-animation: jquery 2s ease;
 }
-.adwords {
+.digitalMarketing {
   	width: 90%;
-  	-moz-animation: adwords 2s ease;
-  	-webkit-animation: adwords 2s ease;
+  	-moz-animation: digitalMarketing 2s ease;
+  	-webkit-animation: digitalMarketing 2s ease;
 }
 .socialmedia {
   	width: 95%;
@@ -369,7 +369,7 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 95%;  }
 }
-@-moz-keyframes adwords {
+@-moz-keyframes digitalMarketing {
   0%   { width: 0px;  }
   100% { width: 90%;  }
 }
@@ -401,7 +401,7 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 95%;  }
 }
-@-webkit-keyframes adwords {
+@-webkit-keyframes digitalMarketing {
   0%   { width: 0px;  }
   100% { width: 90%;  }
 }
