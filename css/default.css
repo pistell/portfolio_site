@@ -756,6 +756,10 @@ properly.
 @media only screen and (max-width: 460px) {
 
    .row { width: auto; }
+   .row .six {
+      display: inline-block;
+      right: -11%;
+   }
 
 }
 
