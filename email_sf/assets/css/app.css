@@ -65,9 +65,12 @@ body.busy .loading-modal {
 }
 
 .header {
-	padding-top: 15px;
+	padding-top: 40px;
 	padding-bottom: 15px;
 	background-color: #eee;
+	background: url(http://www.ypcmedia.com/images/YPCMediaLogoBlack.png) right bottom no-repeat;
+	background-size: 150px;
+	margin-right: 40px;
 }
 
 .header p {
@@ -78,8 +81,13 @@ body.busy .loading-modal {
 }
 
 .header h1 {
-	font-size: 20px;
+	font-size: 36px;
 	margin: 0;
+	color: #EE1F1A;
+}
+
+.header h1 small {
+    font-size: 40%;
 }
 
 h2 {
