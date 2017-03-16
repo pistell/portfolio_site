@@ -28,7 +28,7 @@
 		$('#generate').click(function() {
 			var link1 = $('#link1').val();
 			var link2 = $('#link2').val();
-			var yelpLink = $('yelpLink').val();
+			var yelpLink = $('#yelpLink').val();
 			var siteURL = $('#siteURL').val();
 			var businessName = $('#businessName').val();
 
