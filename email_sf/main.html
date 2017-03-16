@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YPC Media Responsive Email Template for State Farm</title>
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="assets/css/app.css" rel="stylesheet" media="screen">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<h1>State Farm Email Generator <small>By James Pistell</small></h1>
+
+		</div>
+	</header>
+	<main class="application">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<h2>Enter Values</h2>
+					<div class="form-horizontal">
+						<div class="form-group has-feedback">
+							<div class="col-sm-12">
+								<input type="text" class="form-control" id="businessName" placeholder="Agent Name" required>
+                <i class="fa fa-user form-control-feedback" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="form-group has-feedback">
+							<div class="col-sm-12">
+								<input type="text" class="form-control" id="siteURL" placeholder="Agent's Phone Number" required>
+                <i class="fa fa-phone-square form-control-feedback" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="form-group has-feedback">
+							<div class="col-sm-12">
+								<input type="text" class="form-control" id="link1" placeholder="Google+ Review Link" required>
+                <i class="fa fa-google-plus-square form-control-feedback" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="form-group has-feedback">
+							<div class="col-sm-12">
+								<input type="text" class="form-control" id="link2" placeholder="Facebook Review Link" required>
+                <i class="fa fa-facebook-square form-control-feedback" aria-hidden="true"></i>
+							</div>
+						</div>
+            <div class="form-group has-feedback">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="yelpLink" placeholder="Yelp Review Link" required>
+                <i class="fa fa-yelp form-control-feedback" aria-hidden="true"></i>
+              </div>
+            </div>
+
+						<div class="form-group">
+							<div class="col-sm-12">
+								<div class="dropzone">
+									<!-- imgur file uploader injected here -->
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<button id="generate" class="btn btn-primary" onclick="getElementById('emailBlastCopyButton').style.display = 'block';">Generate HTML</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<h2>Generated HTML</h2>
+					<textarea id="output" class="output form-control"></textarea>
+				</div>
+			</div>
+		</div>
+	</main>
+	<section class="preview">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Email Preview</h2>
+					<div class="email-preview" id="emailBlast"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="copyButton" style="text-align: center;">
+							<button id="emailBlastCopyButton" class="btn btn-default btn-copy btn-sm pull-right" data-clipboard-target="#emailBlast">Copy to clipboard</button>
+	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/clipboard.js/1.6.0/clipboard.min.js"></script>
+	<script src="assets/js/imgur.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+</html>

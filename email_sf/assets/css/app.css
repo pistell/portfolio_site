@@ -1,0 +1,182 @@
+body {
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.dropzone {
+	border: 3px dashed #ccc;
+	height: 200px;
+	margin: 0;
+	position: relative;
+	width: auto;
+}
+
+.dropzone p {
+	color: #777;
+	line-height: 20px;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 20px;
+}
+
+.status {
+	text-align: center;
+}
+
+.dropzone input[type="file"] {
+	height: 100%;
+	left: 0;
+	outline: none;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	cursor: pointer;
+}
+
+.dropzone.dropzone-dragging {
+	border-color: black;
+}
+
+.loading-modal {
+	background-color: rgba( 255, 255, 255, .8 );
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.loading-image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -16px 0 0 -16px
+}
+
+body.busy .loading-modal {
+	display: block;
+}
+
+.header {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #eee;
+}
+
+.header p {
+	margin: 0;
+	font-size: 14px;
+	font-weight: normal;
+	color: #777;
+}
+
+.header h1 {
+	font-size: 20px;
+	margin: 0;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+.header .logo {
+	height: auto;
+	display: block;
+	max-width: 210px;
+	margin-bottom: 10px;
+}
+
+.output.form-control {
+	width: 100%;
+	height: 300px;
+	resize: none;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	padding: 10px;
+	font-family: monospace;
+	max-width: 100%;
+	font-size: 11px;
+	line-height: 1;
+}
+
+.application {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/*.btn-copy {
+	position: relative;
+	top: -33px;
+	right: 3px;
+}*/
+.btn-copy {
+    /* position: inherit; */
+    /* top: -33px; */
+    /* right: 3px; */
+		display: none;
+    width: 35%;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 10px 0 10px 0;
+    /* margin: 10px 0 10px 0; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Helvetica;
+    font-size: 30px;
+    background-color: #89008b;
+    color: white;
+    border-radius: 8px;
+    border: 2px black solid;
+}
+
+.preview {
+	background-color: #eee;
+	height: auto;
+	min-height: 500px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	position: relative;
+}
+h1.agentName{
+	font-size: 25px;
+	white-space: nowrap;
+}
+
+.fa-facebook-square {
+    right: 15px;
+    font-size: 30px;
+    padding-top: 2px;
+    color: #375897;
+}
+
+.fa-yelp{
+	right: 15px;
+	font-size: 30px;
+	padding-top: 2px;
+	color: #DF1C21
+}
+
+.fa-google-plus-square{
+	right: 15px;
+	font-size: 30px;
+	padding-top: 2px;
+	color: #E74136
+}
+
+.fa-phone-square{
+	right: 15px;
+	font-size: 30px;
+	padding-top: 2px;
+}
+.fa-user{
+	right: 15px;
+	font-size: 30px;
+	padding-top: 2px;
+}
