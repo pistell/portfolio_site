@@ -52,13 +52,13 @@
     	grad.addColorStop(0, 'rgba(255,255,255,1)');
     	grad.addColorStop(0.15, 'rgba(255,255,255,1)');
     	//Black to red gradient middle
-    	grad.addColorStop(0.15, '#e1261c');
-    	grad.addColorStop(0.85, '#e1261c');
+    	grad.addColorStop(0.15, '#B7281C');
+    	grad.addColorStop(0.85, '#B7281C');
     	//White top
     	grad.addColorStop(0.85, 'rgba(255,255,255,1)');
     	grad.addColorStop(1, 'rgba(255,255,255,1)');
     	ctx.fillStyle = grad;
-    	//Create a 700x200 rectangle
+    	//Create a 490x130 rectangle
     	ctx.fillRect(0, 0, 490, 130);
 
       //Begin displaying Agent information
@@ -78,7 +78,7 @@
 	  		imageObj.onload = function() {
 	    		ctx.drawImage(imageObj, 390, 40, 90, 50);
 	  	};
-	  	imageObj.src = 'state-farm_white_logo.png';
+	  	imageObj.src = 'state-farm_white_logo-2.png';
 
 			//The Agent's Photo
 			var agentMug = new Image();
@@ -94,9 +94,9 @@
 			//Upload the canvas to Imgur to turn it into an image
 			html2canvas(document.body).then(function(canvas){
 				try {
-				    var img = document.getElementById('canvas').toDataURL('image/jpeg', 0.9).split(',')[1];
+				    var img = document.getElementById('canvas').toDataURL('image/jpeg', 1.0).split(',')[1];
 				} catch(e) {
-				    var img = document.getElementById('canvas').toDataURL().split(',')[1];
+				    var img = document.getElementById('canvas').toDataURL('image/jpeg', 1.0).split(',')[1];
 				}
 
 			$.ajax({
