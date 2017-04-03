@@ -76,7 +76,7 @@
     	//The state farm logo
 			var imageObj = new Image();
 	  		imageObj.onload = function() {
-	    		ctx.drawImage(imageObj, 390, 40, 90, 50);
+	    		ctx.drawImage(imageObj, 385, 40, 90, 55);
 	  	};
 	  	imageObj.src = 'state-farm_white_logo-2.png';
 
