@@ -193,6 +193,11 @@ h1.agentName{
 	font-size: 30px;
 	padding-top: 2px;
 }
+.yellowPages{
+	background: url(../../yellowPages.png) no-repeat right center;
+  margin-right: 3px;
+  border-radius: 7px;
+}
 #spinner{
 	width: 160px;
 	padding-bottom: 20px;

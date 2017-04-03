@@ -28,6 +28,7 @@
 			var siteURL 		 = $('#siteURL').val();
 			var businessName = $('#businessName').val();
 			var teamSig 		 = $("#teamSig").val();
+			var yellowPages  = $("#yellowPagesLink").val();
 
 			// search for the template tags and replace with our dynamic values
 			var templateHTML = rawTemplateHTML.replace(/{{imgurLink}}/g, imgurLink);
@@ -37,6 +38,7 @@
 					templateHTML = templateHTML.replace(/{{siteURL}}/g, siteURL);
 					templateHTML = templateHTML.replace(/{{businessName}}/g, businessName);
 					templateHTML = templateHTML.replace(/{{teamSig}}/g, teamSig);
+					templateHTML = templateHTML.replace(/{{yellowPagesLink}}/g, yellowPages);
 
 			// output preview to screen
 			$('.output').val(templateHTML);
